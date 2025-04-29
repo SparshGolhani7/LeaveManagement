@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Use Google Font */
+  background-color: #f5f6fa; /* Light background for the dashboard */
+  color: #333; /* Default text color */
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  padding: 20px;
+  margin-top: 60px; /* Add margin to push content below the fixed header */
+}
+
+/* Greeting Section */
+.greeting {
+  background-color: #1f1f1f; /* Dark background */
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.greeting h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.greeting p {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+  font-weight: 400;
+}
+
+/* Stat Cards */
+.stat-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+  font-weight: 700;
+}
+
+.stat-card p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0 0;
+}
+
+/* Attendance Overview */
+.attendance-overview {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.attendance-overview h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.attendance-chart {
+  height: 200px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 1rem;
+}
+
+/* News & Events */
+.news-events {
+  display: flex;
+  gap: 20px;
+}
+
+.news-card {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.news-card p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .greeting h1 {
+    font-size: 2rem; /* Reduce font size for smaller screens */
+  }
+
+  .greeting p {
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+  }
+
+  .stat-cards {
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    gap: 15px; /* Reduce gap between cards */
+  }
+
+  .stat-card {
+    flex: 1 1 calc(50% - 15px); /* Two cards per row */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .stat-card h2 {
+    font-size: 1.8rem; /* Reduce font size */
+  }
+
+  .stat-card p {
+    font-size: 0.9rem; /* Reduce font size */
+  }
+
+  .attendance-overview h3 {
+    font-size: 1.3rem; /* Reduce font size */
+  }
+
+  .attendance-chart {
+    height: 150px; /* Reduce chart height */
+  }
+
+  .news-events {
+    flex-direction: column; /* Stack news cards vertically */
+    gap: 15px; /* Reduce gap between cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .greeting h1 {
+    font-size: 1.8rem; /* Further reduce font size for phones */
+  }
+
+  .greeting p {
+    font-size: 1rem; /* Further reduce font size for phones */
+  }
+
+  .stat-card {
+    flex: 1 1 100%; /* One card per row */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .stat-card h2 {
+    font-size: 1.5rem; /* Further reduce font size */
+  }
+
+  .stat-card p {
+    font-size: 0.8rem; /* Further reduce font size */
+  }
+
+  .attendance-overview h3 {
+    font-size: 1.2rem; /* Further reduce font size */
+  }
+
+  .attendance-chart {
+    height: 120px; /* Further reduce chart height */
+  }
+}

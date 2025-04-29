@@ -1,0 +1,148 @@
+header {
+  background-color: #1f1f1f; /* Dark background */
+  color: white;
+  padding: 8px 15px; /* Reduced padding for a smaller header */
+  font-family: 'Poppins', sans-serif; /* Use Google Font */
+  display: flex;
+  justify-content: space-between; /* Align left and right sections */
+  align-items: center; /* Vertically center items */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 45px; /* Reduced height for a smaller header */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Reduced gap between logo and navigation */
+}
+
+.header-left h4 {
+  margin: 0;
+  font-size: 0.9rem; /* Reduced font size for navigation links */
+  font-weight: 500; /* Less bold font weight */
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically align icon and text */
+  gap: 5px; /* Add space between icon and text */
+}
+
+.header-left h4 i {
+  font-size: 1rem; /* Adjust icon size */
+  margin-right: 0; /* Remove any extra margin */
+  line-height: 0; /* Ensure the icon doesn't push the text */
+}
+
+.header-left h4:hover {
+  color: #bcd8f3; /* Highlight color on hover */
+}
+
+.header-left h4:hover i {
+  color: #bcd8f3; /* Change icon color on hover */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Reduced gap between icons and profile */
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem; /* Reduced icon size */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon-button:hover {
+  color: #ebedf5; /* Highlight color on hover */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Reduced gap between profile image and name */
+}
+
+.profile-icon {
+  width: 35px; /* Reduced profile image size */
+  height: 35px;
+  border-radius: 50%; /* Circular profile image */
+  cursor: pointer;
+}
+
+.logo {
+  width: 40px; /* Reduced logo size */
+  height: 35px;
+  margin-right: 15px; /* Reduced space between logo and title */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 8px 10px; /* Adjust padding for smaller screens */
+    height: 50px; /* Slightly increase height for better spacing */
+  }
+
+  .header-left {
+    gap: 10px; /* Reduce gap between logo and navigation */
+  }
+
+  .header-left h4 {
+    font-size: 0.8rem; /* Smaller font size for navigation links */
+  }
+
+  .header-right {
+    gap: 10px; /* Reduce gap between icons and profile */
+  }
+
+  .icon-button {
+    font-size: 0.9rem; /* Smaller icon size */
+  }
+
+  .profile-icon {
+    width: 30px; /* Smaller profile image size */
+    height: 30px;
+  }
+
+  .logo {
+    width: 35px; /* Smaller logo size */
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column; /* Stack header content vertically */
+    align-items: flex-start; /* Align items to the left */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .header-left {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: flex-start; /* Align links to the left */
+    gap: 5px; /* Reduce gap between items */
+  }
+
+  .header-right {
+    margin-top: 10px; /* Add spacing between left and right sections */
+    align-self: flex-end; /* Align icons to the right */
+  }
+
+  .header-left h4 {
+    font-size: 0.8rem; /* Smaller font size for navigation links */
+  }
+
+  .icon-button {
+    font-size: 0.8rem; /* Smaller icon size */
+  }
+}
