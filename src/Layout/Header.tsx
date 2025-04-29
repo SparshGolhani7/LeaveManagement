@@ -2,14 +2,14 @@ import React from 'react';
 import './Header.css';
 import { RxDashboard } from "react-icons/rx";
 import { IoPersonOutline } from "react-icons/io5";
-import { MdOutlineMiscellaneousServices } from "react-icons/md"; // Icon for Services
-import { AiOutlineInfoCircle } from "react-icons/ai"; // Icon for About Us
-import { MdOutlineContactMail } from "react-icons/md"; // Icon for Contact Us
+import { MdOutlineMiscellaneousServices } from "react-icons/md"; 
+import { AiOutlineInfoCircle } from "react-icons/ai"; 
+import { MdOutlineContactMail } from "react-icons/md"; 
 import { useNavigate } from 'react-router-dom';   
 import logo from '../assets/images/nuance_infotech_logo.jpg';
 
 const Header: React.FC = () => {
-  const navigate = useNavigate(); // Assuming you're using react-router-dom for navigation
+  const navigate = useNavigate(); 
   return (
     <header>
       <div className="header-left">
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
         </button>
         <div className="profile">
           <img
-            src="https://via.placeholder.com/40" // Replace with your profile image URL
+            src="https://via.placeholder.com/40" 
             alt="Profile"
             className="profile-icon"
           />
